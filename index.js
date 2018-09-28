@@ -99,7 +99,7 @@ function vel_step ( N, u, v, u0, v0, visc, dt ) {
   project ( N, u, v, u0, v0 );
 }
 
-export class Fluid {
+class Fluid {
   constructor(N, visc, diff) {
     this.N = N;
     this.visc = visc;
@@ -137,3 +137,5 @@ export class Fluid {
     return [this.u[ix], this.v[ix]]
   }
 }
+
+exports.Fluid = Fluid

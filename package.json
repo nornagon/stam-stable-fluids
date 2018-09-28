@@ -1,6 +1,6 @@
 {
   "name": "stam-stable-fluids",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Real-Time Fluid Dynamics for Games, Jos Stam 2003",
   "main": "index.js",
   "keywords": ["fluid", "simulation", "fluidsim", "jos stam", "liquid"],

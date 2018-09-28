@@ -7,10 +7,10 @@ Example:
 const size = 128
 const f = new Fluid(size)
 for (let y = 0; y < size; y++)
-  for (let x = 0; x < size; x++)
+  for (let x = 0; x < size/2; x++)
     f.addDensity(x, y, 10)
 for (let y = 0; y < size; y++)
-  f.addVelicty(10, y, 10, 0)
+  f.addForce(10, y, 10, 0)
 f.step(1/60)
 
 const [vx, vy] = f.velocityAt(0, 0)

@@ -4,6 +4,7 @@ This is a direct port from the C code presented in Stam's 2003 paper, with a sma
 
 Example:
 ```js
+const {Fluid} = require('stam-stable-fluids')
 const size = 128
 const f = new Fluid(size)
 for (let y = 0; y < size; y++)

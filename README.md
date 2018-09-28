@@ -19,26 +19,26 @@ const d = f.densityAt(0, 0)
 
 ## API
 
-### `new Fluid(size, viscosity, diffusion)`
+#### `new Fluid(size, viscosity, diffusion)`
 
 Make a new fluid simulation with width and height equal to `size`. If you want a goopier fluid, like honey, set `viscosity` to a small positive number, like `0.0001` (larger numbers will probably make the fluid so "thick" it will barely move). `diffusion` will make the "stuff" in the fluid spread out over time.
 
-### `Fluid.step(dt)`
+#### `Fluid.step(dt)`
 
 Step the simulation by `dt` (e.g. `1/60`).
 
-### `Fluid.velocityAt(x, y)`
+#### `Fluid.velocityAt(x, y)`
 
 Returns `[vx, vy]` representing the velocity of the fluid at (_x_, _y_).
 
-### `Fluid.densityAt(x, y)`
+#### `Fluid.densityAt(x, y)`
 
 Returns the density of "stuff" at (_x_, _y_).
 
-### `Fluid.addForce(x, y, fx, fy)`
+#### `Fluid.addForce(x, y, fx, fy)`
 
 Adds an external force to the fluid, e.g. from a UI or other system. The force field will be cleared after every `step()`.
 
-### `Fluid.addDensity(x, y, d)`
+#### `Fluid.addDensity(x, y, d)`
 
 Adds an external density flow to the fluid. `d` is the rate of flow. The density flow field will be cleared after every `step()`.

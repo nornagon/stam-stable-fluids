@@ -1,11 +1,10 @@
 {
   "name": "stam-stable-fluids",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Real-Time Fluid Dynamics for Games, Jos Stam 2003",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "keywords": ["fluid", "simulation", "fluidsim", "jos stam", "liquid"],
+  "scripts": {},
+  "author": "Jeremy Apthorp <nornagon@nornagon.net>",
   "license": "ISC"
 }

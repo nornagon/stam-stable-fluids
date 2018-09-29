@@ -20,9 +20,9 @@ const d = f.densityAt(0, 0)
 
 ## API
 
-#### `new Fluid(size, viscosity, diffusion)`
+#### `new Fluid(size, viscosity = 0, diffusion = 0)`
 
-Make a new fluid simulation with width and height equal to `size`. If you want a goopier fluid, like honey, set `viscosity` to a small positive number, like `0.0001` (larger numbers will probably make the fluid so "thick" it will barely move). `diffusion` will make the "stuff" in the fluid spread out over time.
+Make a new fluid simulation with width and height equal to `size`. If you want a goopier fluid, like honey, set `viscosity` to a small positive number, like `0.0001` (larger numbers will probably make the fluid so "thick" it will barely move). `diffusion` will make the "stuff" in the fluid spread out over time. The default for both viscosity and diffusion, if not provided, is 0.
 
 #### `Fluid.step(dt)`
 

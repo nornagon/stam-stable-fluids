@@ -102,8 +102,8 @@ function vel_step ( N, u, v, u0, v0, visc, dt ) {
 class Fluid {
   constructor(N, visc, diff) {
     this.N = N;
-    this.visc = visc;
-    this.diff = diff;
+    this.visc = visc || 0;
+    this.diff = diff || 0;
     this.u = new Float32Array((N+2)*(N+2));
     this.u0 = new Float32Array((N+2)*(N+2));
     this.v = new Float32Array((N+2)*(N+2));

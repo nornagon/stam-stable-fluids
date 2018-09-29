@@ -1,7 +1,8 @@
 {
   "name": "stam-stable-fluids",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Real-Time Fluid Dynamics for Games, Jos Stam 2003",
+  "repository": "github:nornagon/stam-stable-fluids",
   "main": "index.js",
   "keywords": ["fluid", "simulation", "fluidsim", "jos stam", "liquid"],
   "scripts": {},
